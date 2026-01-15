@@ -292,7 +292,7 @@ body {
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   height: 100vh;
 }
 
@@ -315,6 +315,7 @@ body {
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 40px;
   margin-top: 50px;
+  /* padding: 90px; */
 }
 
 
@@ -323,7 +324,7 @@ body {
   padding: 40px;
   font-size: 13px;
   /* font-weight: 500; */
-  border-right: 10px;
+  /* border-right: 10px; */
   border-radius: 20px;
   transition: background 0.5s ,transform 0.5s;
   box-shadow: 1px 1px 20px #012290f7,
@@ -377,3 +378,64 @@ body {
 .services-list div:hover{
   transform: translateY(-10px);
 }
+
+/* Portfolio-Section */
+.portfolio{
+  height: 100vh;
+  /* font-size: 20px; */
+
+}
+
+.container_projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  padding: 90px;
+}
+
+.projects{
+  background-color:transparent;
+  font-size: 13px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px#012290f7,
+  1px 1px 40px #0053b8f7;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background 0.5s ,transform 0.5s;
+
+  /* background-image: url( https://img.freepik.com/free-vector/search-bar-with-mouse-clicker_78370-2922.jpg?semt=ais_hybrid&w=740&q=80); */
+}
+
+ .projects:hover{
+  transform: translateY(-10px);
+}
+
+div h2{
+  color: #012290f7;
+
+}
+
+div h4 span{
+  color: #012290f7;
+  font-size: 16px;
+
+}
+
+div p span{
+  color: #012290f7;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+#btn{
+  padding: 8px 9px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
