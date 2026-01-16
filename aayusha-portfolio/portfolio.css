@@ -5,7 +5,7 @@
   font-family: "poppins", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -152,8 +152,8 @@ body {
 }
 
 .btn-box:hover {
-  box-shadow: 0 0 5px #012290f7, 0 0 25px #012290f7, 0 0 50px #012290f7, 0 0 100px #012290f7,
-    0 0 200px #012290f7;
+  box-shadow: 0 0 5px #012290f7, 0 0 25px #012290f7, 0 0 50px #012290f7,
+    0 0 100px #012290f7, 0 0 200px #012290f7;
 }
 
 .img-sec {
@@ -163,8 +163,7 @@ body {
   border-radius: 50%;
   /* border: 3px solid red; */
   overflow: hidden;
-  box-shadow:1px 1px 20px #012290f7,
-  1px 1px 40px #0053b8f7;
+  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
   animation: slideLeft 1s ease forwards;
   animation-delay: 0.8s;
   opacity: 0;
@@ -197,8 +196,7 @@ body {
   border-radius: 50%;
   /* border: 3px solid red; */
   overflow: hidden;
-  box-shadow: 1px 1px 20px #012290f7,
-  1px 1px 40px #0053b8f7;
+  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
   animation: slideLeft 1s ease forwards;
   animation-delay: 0.8s;
   opacity: 0;
@@ -217,7 +215,6 @@ body {
     height: auto;
     border-radius: 8px;
 } */
-
 
 .about-text h2 {
   font-size: 60px;
@@ -286,9 +283,8 @@ body {
   }
 }
 
-
 /* SERVICES */
-#services{
+#services {
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
@@ -296,53 +292,51 @@ body {
   height: 100vh;
 }
 
-.container{
+.container {
   padding: 90px;
 }
 
-.sub-title{
+.sub-title {
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
 }
 
-.sub-title span{
+.sub-title span {
   color: #012290f7;
 }
 
-.services-list{
+.services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
   /* padding: 90px; */
 }
 
-
-.services-list div{
+.services-list div {
   background-color: transparent;
   padding: 40px;
   font-size: 13px;
   /* font-weight: 500; */
   /* border-right: 10px; */
   border-radius: 20px;
-  transition: background 0.5s ,transform 0.5s;
-  box-shadow: 1px 1px 20px #012290f7,
-  1px 1px 40px #0053b8f7;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
 }
 
-.services-list div i{
+.services-list div i {
   font-size: 50px;
   margin-bottom: 30px;
 }
 
-.services-list div h1{
+.services-list div h1 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
-.services-list div a{
+.services-list div a {
   text-align: none;
   color: #000;
   font-size: 12px;
@@ -350,7 +344,7 @@ body {
   display: inline-block;
 }
 
-.read{
+.read {
   display: inline-block;
   padding: 12px 20px;
   background-color: #012290f7;
@@ -362,80 +356,91 @@ body {
   font-weight: 600;
   opacity: 0;
   animation: slideTop 1s ease forwards;
-  animation-delay:0.5s;
-  box-shadow: 0 0 5px #012290f7,
-  0 0 25px ;
+  animation-delay: 0.5s;
+  box-shadow: 0 0 5px #012290f7, 0 0 25px;
 }
 
-.read:hover{
-   box-shadow: 0 0 5px #012290f7,
-   0 0 25px #012290f7,
-   0 0 50px #012290f7,
-   0 0 100px #012290f7,
-   0 0 200px #234acbf7;
+.read:hover {
+  box-shadow: 0 0 5px #012290f7, 0 0 25px #012290f7, 0 0 50px #012290f7,
+    0 0 100px #012290f7, 0 0 200px #234acbf7;
 }
 
-.services-list div:hover{
+.services-list div:hover {
   transform: translateY(-10px);
 }
 
 /* Portfolio-Section */
-.portfolio{
+.portfolio {
   height: 100vh;
-  /* font-size: 20px; */
-
-}
-
-.container_projects{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
   padding: 90px;
 }
 
-.projects{
-  background-color:transparent;
+.container_projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  /* padding: 80px; */
+}
+
+.projects {
+  background-color: transparent;
   font-size: 13px;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 1px 1px 20px#012290f7,
-  1px 1px 40px #0053b8f7;
+  box-shadow: 1px 1px 20px#012290f7, 1px 1px 40px #0053b8f7;
   min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: background 0.5s ,transform 0.5s;
-
-  /* background-image: url( https://img.freepik.com/free-vector/search-bar-with-mouse-clicker_78370-2922.jpg?semt=ais_hybrid&w=740&q=80); */
+  transition: background 0.5s, transform 0.5s;
 }
 
- .projects:hover{
+.projects:hover {
   transform: translateY(-10px);
 }
 
-div h2{
-  color: #012290f7;
-
+.project-img {
+  height: 200px;
+  margin-bottom: 20px;
 }
 
-div h4 span{
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-content {
+  margin-bottom: 10px;
+}
+
+.project-content h2 {
+  color: #012290f7;
+}
+
+.project-info h4 span {
   color: #012290f7;
   font-size: 16px;
-
 }
 
-div p span{
+.project-info p span {
   color: #012290f7;
   font-size: 16px;
   font-weight: 600;
 }
 
-
-
-#btn{
-  padding: 8px 9px;
-  align-self: flex-start;
-  cursor: pointer;
+.project-info {
+  margin-bottom: 20px;
 }
+
+.btn-box {
+  padding: 8px 9px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
 
