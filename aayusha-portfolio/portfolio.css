@@ -33,7 +33,7 @@ body {
   position: relative;
   font-size: 25px;
   font-weight: 600;
-  color: #fff;
+  color: blueviolet;
   text-decoration: none;
   cursor: default;
   opacity: 0;
@@ -54,7 +54,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #012290f7;
+  color: blueviolet;
 }
 
 /* Home-Section */
@@ -91,7 +91,7 @@ body {
 }
 
 .home-content h3 span {
-  color: #012290f7;
+  color: blueviolet;
 }
 
 .home-content h1 {
@@ -110,35 +110,36 @@ body {
   animation-delay: 1s;
 }
 
+.home-sci {
+  cursor: pointer;
+}
+
 .home-sci a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-  border: 2px solid #012290f7;
+  border: 2px solid blueviolet;
   border-radius: 50%;
   font-size: 20px;
   text-decoration: none;
   background: transparent;
   margin: 30px 15px 30px 0;
-  color: #012290f7;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: calc(0.1s * var(--i));
-  transition: 0.5s ease;
+  transition: transform 0.5s;
 }
 
-.home-sci a :hover {
-  background: #012290f7;
-  color: #081b29;
-  box-shadow: 0 0 20px #012290f7;
+.home-sci a:hover {
+  box-shadow: 0 0 20px blueviolet;
 }
 
 .btn-box {
   display: inline-block;
   padding: 12px 28px;
-  background: #012290f7;
+  background: blueviolet;
   border-radius: 40px;
   font-size: 16px;
   color: #081b29;
@@ -148,12 +149,12 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 0.2s;
-  box-shadow: 0 0 5px #012290f7, 0 0 25px #012290f7;
+  box-shadow: 0 0 5px blueviolet, 0 0 25px blueviolet;
 }
 
 .btn-box:hover {
-  box-shadow: 0 0 5px #012290f7, 0 0 25px #012290f7, 0 0 50px #012290f7,
-    0 0 100px #012290f7, 0 0 200px #012290f7;
+  box-shadow: 0 0 5px blueviolet, 0 0 25px blueviolet, 0 0 50px blueviolet,
+    0 0 100px blueviolet, 0 0 200px blueviolet;
 }
 
 .img-sec {
@@ -163,7 +164,7 @@ body {
   border-radius: 50%;
   /* border: 3px solid red; */
   overflow: hidden;
-  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+  box-shadow: 1px 1px 20px blueviolet, 1px 1px 40px blueviolet;
   animation: slideLeft 1s ease forwards;
   animation-delay: 0.8s;
   opacity: 0;
@@ -185,7 +186,7 @@ body {
   align-items: center;
   gap: 1.5rem;
   width: 100%;
- min-height: 100vh;
+  min-height: 100vh;
   padding: 30px 10%;
 }
 
@@ -196,7 +197,7 @@ body {
   border-radius: 50%;
   /* border: 3px solid red; */
   overflow: hidden;
-  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+  box-shadow: 1px 1px 20px blueviolet, 1px 1px 40px blueviolet;
   animation: slideLeft 1s ease forwards;
   animation-delay: 0.8s;
   opacity: 0;
@@ -221,7 +222,7 @@ body {
 }
 
 .about-text h2 span {
-  color: #012290f7;
+  color: blueviolet;
 }
 
 .about-text h4 {
@@ -303,7 +304,7 @@ body {
 }
 
 .sub-title span {
-  color: #012290f7;
+  color: blueviolet;
 }
 
 .services-list {
@@ -322,7 +323,7 @@ body {
   /* border-right: 10px; */
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
-  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+  box-shadow: 1px 1px 20px blueviolet, 1px 1px 40px blueviolet;
 }
 
 .services-list div i {
@@ -347,7 +348,7 @@ body {
 .read {
   display: inline-block;
   padding: 12px 20px;
-  background-color: #012290f7;
+  background-color: blueviolet;
   border-radius: 40px;
   font-size: 16px;
   color: #081b29;
@@ -357,12 +358,12 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 0.5s;
-  box-shadow: 0 0 5px #012290f7, 0 0 25px;
+  box-shadow: 0 0 5px blueviolet, 0 0 25px;
 }
 
 .read:hover {
-  box-shadow: 0 0 5px #012290f7, 0 0 25px #012290f7, 0 0 50px #012290f7,
-    0 0 100px #012290f7, 0 0 200px #234acbf7;
+  box-shadow: 0 0 5px blueviolet, 0 0 25px blueviolet, 0 0 50px blueviolet,
+    0 0 100px blueviolet, 0 0 200px blueviolet;
 }
 
 .services-list div:hover {
@@ -387,7 +388,7 @@ body {
   font-size: 13px;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 1px 1px 20px#012290f7, 1px 1px 40px #0053b8f7;
+  box-shadow: 1px 1px 20px blueviolet, 1px 1px 40px blueviolet;
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -416,16 +417,16 @@ body {
 }
 
 .project-content h2 {
-  color: #012290f7;
+  color: blueviolet;
 }
 
 .project-info h4 span {
-  color: #012290f7;
+  color: blueviolet;
   font-size: 16px;
 }
 
 .project-info p span {
-  color: #012290f7;
+  color: blueviolet;
   font-size: 16px;
   font-weight: 600;
 }
@@ -455,13 +456,14 @@ body {
 }
 
 .contact-header span {
-  color: #012290f7;
+  color: blueviolet;
 }
 
 .contact-intro {
   font-size: 20px;
   margin-top: 100px;
   margin-bottom: 0;
+  /* color: blueviolet; */
 }
 
 .contact-area {
@@ -470,13 +472,20 @@ body {
   align-items: center;
 }
 
-.contact-info{
+.contact-info {
   padding: 10px;
   align-self: self-start;
   margin-top: 70px;
   border: 1px solid blueviolet;
   border-radius: 10px;
   width: 600px;
+  box-shadow: 1px 1px 90px blueviolet;
+  transition: transform 0.5s;
+}
+
+.contact-info:hover {
+  transform: scale(1.06);
+  cursor: pointer;
 }
 
 .contact-info h2 {
@@ -491,7 +500,7 @@ body {
   align-items: center;
 }
 
-.contact-links{
+.contact-links {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -506,29 +515,70 @@ body {
   transition: background 0.5s, transform 0.5s;
 }
 
-.contact-form{
-  padding: 10px;
+.info .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.info .social-links h4 {
+  margin-right: 10px;
+}
+
+.contact-form {
+  padding: 20px;
   border: 1px solid blueviolet;
   border-radius: 10px;
   width: 600px;
+  box-shadow: 1px 1px 90px blueviolet;
+  transition: transform ease 0.5s;
 }
 
+.contact-form:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
 
+.contact-form h2 {
+  margin-bottom: 20px;
+}
 
+.form {
+  margin-bottom: 10px;
+}
 
+.form input {
+  padding: 8px;
+  background: transparent;
+  /* border: none; */
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
 
+.form label {
+  margin-right: 10px;
+}
 
+.form textarea {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
 
-
-
-
-
-.contact-footer {
+/* Footer-Section */
+.footer {
   text-align: center;
+  padding: 20px;
 }
 
 .social-links {
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .social-links a {
