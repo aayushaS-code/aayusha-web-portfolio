@@ -12,7 +12,9 @@ html {
 body {
   color: #ededed;
   background-color: #000;
+  overflow-x: hidden;
 }
+
 
 /* Header-Section */
 .header {
@@ -40,13 +42,23 @@ body {
   animation: slideRight 1s ease forwards;
 }
 
+.navbar{
+  gap: 20px;
+  display: flex;
+align-items: center;
+}
+
+.navbar i{
+  display: none;
+}
+
 .navbar a {
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
-  margin-left: 25px;
+  /* margin-left: 25px; */
   transition: 0.3s;
   opacity: 0;
   animation: slideTop 0.8s ease forwards;
@@ -61,7 +73,7 @@ body {
 .home {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -195,7 +207,6 @@ body {
   width: 450px;
   background: red;
   border-radius: 50%;
-  /* border: 3px solid red; */
   overflow: hidden;
   box-shadow: 1px 1px 20px blueviolet, 1px 1px 40px blueviolet;
   animation: slideLeft 1s ease forwards;
@@ -209,13 +220,7 @@ body {
   object-fit: cover;
 }
 
-/* .about-img img{
-    padding-bottom: 20%;
-    max-width: 630px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-} */
+
 
 .about-text h2 {
   font-size: 60px;
@@ -229,7 +234,6 @@ body {
   font-size: 29px;
   font-weight: 600;
   color: #fff;
-  /* line-height: 1.7; */
   margin: 15px 0 30px;
 }
 
@@ -289,7 +293,6 @@ body {
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
-  /* margin-bottom: 4rem; */
   height: auto;
 }
 
@@ -312,15 +315,13 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
-  /* padding: 90px; */
 }
 
 .services-list div {
   background-color: transparent;
   padding: 40px;
   font-size: 13px;
-  /* font-weight: 500; */
-  /* border-right: 10px; */
+ 
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
   box-shadow: 1px 1px 20px blueviolet, 1px 1px 40px blueviolet;
@@ -463,7 +464,6 @@ body {
   font-size: 20px;
   margin-top: 100px;
   margin-bottom: 0;
-  /* color: blueviolet; */
 }
 
 .contact-area {
@@ -493,9 +493,7 @@ body {
 }
 
 .info {
-  /* width: 100%; */
   display: flex;
-  /* justify-content: space-between; */
   margin-bottom: 10px;
   align-items: center;
 }
@@ -551,7 +549,6 @@ body {
 .form input {
   padding: 8px;
   background: transparent;
-  /* border: none; */
   border: 1px solid white;
   border-radius: 10px;
   color: white;
@@ -588,16 +585,154 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  /* margin-bottom: 20px; */
   border: 2px solid rgb(110, 10, 110);
   border-radius: 50%;
   font-size: 20px;
   text-decoration: none;
   background: transparent;
-  /* transition: 0.5s ease; */
   transition: background 0.5s, transform 0.5s;
 }
 
 .social-links a:hover {
   transform: translateY(-5px);
+}
+
+@media (max-width: 1024px) {
+
+  /* Header */
+  .header {
+    padding: 15px 20px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  /* Home section */
+  .home {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding-top: 120px;
+  }
+
+  .home-content {
+    max-width: 100%;
+  }
+
+  .img-sec {
+    width: 350px;
+    height: 350px;
+  }
+
+  /* About section */
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-img {
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+  }
+
+  /* Contact */
+  .contact-area {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Header */
+  .navbar a {
+    display: none; 
+  }
+
+  .navbar i {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  /* Home */
+  .home {
+    padding: 100px 5% 40px;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content h3 {
+    font-size: 18px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .img-sec {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* About */
+  .about-text h2 {
+    font-size: 36px;
+  }
+
+  .about-text h4 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  /* Services */
+  .container {
+    padding: 40px 20px;
+  }
+
+  .sub-title {
+    font-size: 36px;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    padding: 40px 20px;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .contact-header {
+    font-size: 36px;
+  }
+
+  .contact-intro {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+  }
 }
